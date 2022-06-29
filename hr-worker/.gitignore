@@ -19,6 +19,8 @@ target/
 *.iml
 *.ipr
 .metadata/
+.mvn/
+.target/
 
 ### NetBeans ###
 /nbproject/private/
