@@ -1,0 +1,3 @@
+RestTemplate
+
+@Bean - Instancia unica que fica disponivel no projeto
