@@ -26,7 +26,6 @@ public class PaymentService {
 //    	uriVariable.put("id", String.valueOf(workerId));
 //    	HttpEntity<Object> entity = new HttpEntity<>(uriVariable); 
 //    	ResponseEntity<Worker> worker = restTemplate.exchange(HR_WORKER.concat(String.valueOf(workerId)), HttpMethod.GET, entity, Worker.class, uriVariable);
-    	
     	Worker worker = workerFeignClient.findById(workerId).getBody();
         return new Payment(worker.getName(), worker.getDailyIncome(), days);
     }
