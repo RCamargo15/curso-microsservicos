@@ -8,7 +8,8 @@ import org.springframework.web.client.RestTemplate;
 public class AppConfig {
 
 	@Bean
-	public RestTemplate restTemplate() { //instancia de objeto restTemplate para injetar no projeto inteiro
+	public RestTemplate restTemplate() { 
+		//instancia de objeto restTemplate para injetar no projeto inteiro
 		return new RestTemplate();
 	}
 }
